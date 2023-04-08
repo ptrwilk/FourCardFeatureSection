@@ -1,0 +1,67 @@
+@import url('../../colors.css');
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.container .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+}
+
+.container .header .title{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    font-size: 36px;
+    font-weight: 200;
+    text-align: center;
+    color: var(--very-dark-blue);
+}
+
+.container .header span{
+    font-weight: 600;
+}
+
+.container .header .text{
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
+
+.container .cards{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.container .card-container{
+    padding: 1rem;
+}
+
+@media (max-width : 768px) {
+    .container .header .title{
+        font-size: 30px;
+    }
+
+    .container .cards{
+        flex-direction: column;
+    }
+
+    .container .card-container{
+        width: 100%;
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width : 500px) {
+    .container .header .title{
+        font-size: 24px;
+    }
+}

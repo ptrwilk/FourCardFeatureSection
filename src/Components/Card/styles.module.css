@@ -1,0 +1,50 @@
+@import url('../../colors.css');
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    padding: 2rem;
+    border-radius: .5rem;
+    background: var(--very-light-gray);
+    box-shadow: 0px 10px 15px hsl(229, 6%, 66%, 0.3);
+    overflow: hidden;
+}
+
+.container .top-border{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: red;
+    border-radius: 20px 20px 0 0;
+}
+
+.container .title{
+    font-weight: 600;
+    color: var(--very-dark-blue);
+}
+
+.container .text{
+    margin-top: 1rem;
+    font-weight: 200;
+    color: var(--grayish-blue);
+}
+
+.container .icon{
+    margin-top: 3rem;
+    align-self: flex-end;
+}
+
+@media (max-width : 768px) {
+    .container{
+        max-width: 100%;
+        padding: 2rem 1.8rem;
+    }
+
+    .container .icon{
+        margin-top: 2.5rem;
+    }
+}
